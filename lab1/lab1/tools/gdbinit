@@ -1,0 +1,6 @@
+file bin/kernel
+set architecture i8086
+target remote :1234
+define hook-stop
+x/i $pc
+end
